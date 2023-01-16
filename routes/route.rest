@@ -1,0 +1,28 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/63c4dde8e0be7bbda3977ba7
+
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+  "name": "grogu",
+  "subscribedToChannel": "Mandalorian"
+}
+
+###
+
+DELETE http://localhost:3000/subscribers/63c4dde8e0be7bbda3977ba7
+
+###
+
+PATCH http://localhost:3000/subscribers/63c4dfc019c6a13eb2f502a5
+Content-Type: application/json
+
+{
+  "name": "Din Djarin"
+}
